@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classic Ciphers</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Classic Ciphers</h1>
+    
+    <!-- Playfair Cipher -->
+    <section class="cipher">
+        <h2>Playfair Cipher</h2>
+        <label for="playfairKeyword">Keyword:</label>
+        <input type="text" id="playfairKeyword">
+        <label for="playfairPlaintext">Text:</label>
+        <input type="text" id="playfairPlaintext">
+        <button onclick="performPlayfairEncryption()">Encrypt</button>
+        <button onclick="performPlayfairDecryption()">Decrypt</button>
+        <label for="playfairCiphertext">Result:</label>
+        <textarea id="playfairCiphertext" rows="5" cols="40" readonly></textarea>
+    </section>
+    
+    <!-- Caesar Cipher -->
+    <section class="cipher">
+        <h2>Caesar Cipher</h2>
+        <label for="caesarShift">Shift:</label>
+        <input type="number" id="caesarShift">
+        <label for="caesarPlaintext">Text:</label>
+        <input type="text" id="caesarPlaintext">
+        <button onclick="performCaesarEncryption()">Encrypt</button>
+        <button onclick="performCaesarDecryption()">Decrypt</button>
+        <label for="caesarCiphertext">Result:</label>
+        <textarea id="caesarCiphertext" rows="5" cols="40" readonly></textarea>
+    </section>
+    
+    <!-- Vigenere Cipher -->
+    <section class="cipher">
+        <h2>Vigenere Cipher</h2>
+        <label for="vigenereKeyword">Keyword:</label>
+        <input type="text" id="vigenereKeyword">
+        <label for="vigenerePlaintext">Text:</label>
+        <input type="text" id="vigenerePlaintext">
+        <button onclick="performVigenereEncryption()">Encrypt</button>
+        <button onclick="performVigenereDecryption()">Decrypt</button>
+        <label for="vigenereCiphertext">Result:</label>
+        <textarea id="vigenereCiphertext" rows="5" cols="40" readonly></textarea>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
